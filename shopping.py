@@ -18,3 +18,15 @@ def add_tax(prices, tax):
 
 # Call add_tax func 
 add_tax(price_list, tax_rate)
+
+
+# Alternative function that creates a new list containing prices after tax
+def add_tax_new(prices, tax):
+    # Create new list containing rounded, calculated prices
+    final_prices = [round(price * tax, 2) for price in prices]
+    # Iterate through and print final prices
+    for final_price in final_prices:
+        print(final_price)
+
+# Call alternative func
+add_tax_new(price_list, tax_rate)
