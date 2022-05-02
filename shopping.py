@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # shopping.py
 
+
 # Create list of initial item prices
 price_list = [10.11, 7.99, 5.99, 2.49, 0.99]
 
@@ -24,9 +25,8 @@ add_tax(price_list, tax_rate)
 def add_tax_new(prices, tax):
     # Create new list containing rounded, calculated prices
     final_prices = [round(price * tax, 2) for price in prices]
-    # Iterate through and print final prices
-    for final_price in final_prices:
-        print(final_price)
+    # Print each final price on a new line
+    print(*final_prices, sep = "\n")
 
 # Call alternative func
 add_tax_new(price_list, tax_rate)
