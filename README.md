@@ -2,7 +2,7 @@
 
 ### Overview
 Program that takes a list of prices and applies a defined tax rate to each
-price then print the new prices without modifying the initial list.
+price then prints the new prices without modifying the initial list.
 
 ### Author
 Janiel Thompson
